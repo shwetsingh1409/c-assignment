@@ -1,0 +1,31 @@
+//C program to calculate total, average and percentage and grades of five subjects.
+
+#include <stdio.h>
+int main()
+{
+    float eng, phy, chem, maths, comp; 
+    float total, average, percentage;
+    printf("Enter marks of eng:\n");
+    scanf("%f", &eng);
+     printf("Enter marks of phy:\n");
+    scanf("%f", &phy);
+     printf("Enter marks of chem:\n");
+    scanf("%f", &chem);
+     printf("Enter marks of maths:\n");
+    scanf("%f", &maths);
+     printf("Enter marks of comp:\n");
+    scanf("%f", &comp);
+    if(percentage <=95){
+    	printf("grade A+\n");
+	}
+	else{
+		printf("grade A");
+	}
+    total = eng + phy + chem + maths + comp;
+    average = total / 5.0;
+    percentage = (total / 500.0) * 100;
+    printf("Total marks = %.2f\n", total);
+    printf("Average marks = %.2f\n", average);
+    printf("Percentage = %.2f", percentage);
+    return 0;
+}
